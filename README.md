@@ -1,48 +1,83 @@
 # 🤖 Effective AI Agent Design Patterns with LangGraph & CrewAI
 
-This repository presents a structured implementation of **AI agent design patterns** using two powerful frameworks: **LangGraph** and **CrewAI**. Inspired by the *"Building Effective Agents"* methodology, the notebooks showcase reusable agent workflows, decision strategies, and modular patterns that scale across domains.
+This repository presents a structured implementation of **AI agent design patterns** using two powerful frameworks: **LangGraph** and **CrewAI**. Inspired by the *"Building Effective Agents"* methodology, the notebooks demonstrate modular, reusable patterns like prompt chaining, parallel workflows, evaluator-optimizer loops, and routing agents.
 
 ---
 
 ## 📌 Objective
 
-- Understand and apply agent design patterns using LangGraph and CrewAI.
-- Implement agent workflows with memory, tools, and conditional transitions.
-- Visualize and debug execution using **LangSmith Studio** and **CrewAI built-in traces**.
-- Demonstrate side-by-side implementations using both frameworks.
+- Implement and compare **agent design patterns** using LangGraph and CrewAI  
+- Demonstrate workflows involving **tool use**, **reasoning loops**, and **autonomous task planning**  
+- Use **LangSmith traces** for LangGraph and **Groq-compatible CrewAI flows** for performance  
+- Provide side-by-side implementations for learning and benchmarking  
 
 ---
 
 ## 🎥 Video Walkthroughs
 
-| Topic | Link |
-|-------|------|
+| Topic                | Link     |
+|----------------------|----------|
 | LangGraph Agent Demo | [Watch here](#) |
-| CrewAI Agent Demo | [Watch here](#) |
+| CrewAI Agent Demo    | [Watch here](#) |
 
-*(Replace `#` with the actual YouTube or Google Drive link to your video)*
+*Replace `#` with the actual YouTube or Drive video links.*
 
 ---
 
 ## 📘 LangGraph-Based Notebooks
 
-| Notebook | Description |
-|----------|-------------|
-| `basic_agent.ipynb` | A minimal LangGraph agent that takes an input and returns a response using a reactive pattern. |
-| `stateful_agent.ipynb` | Demonstrates memory-based transitions and agent state progression using a state machine approach. |
-| `multi_tool_agent.ipynb` | Combines multiple tools with conditional logic to execute complex tasks using tool routing. |
+| Notebook                              | Description |
+|----------------------------------------|-------------|
+| `LangGraph_Agent_Design_Patterns.ipynb` | Complete set of agent design patterns:  
+- ✅ Prompt Chaining  
+- ⚡ Parallelization  
+- 🔁 Orchestrator–Worker  
+- 🧪 Evaluator–Optimizer  
+- 🧭 Router Pattern  
+- 🔄 Autonomous Looping Agent  
 
-🛠️ Includes LangSmith trace demonstration for better observability and debugging.
+🛠️ Includes LangSmith trace support for each pattern.
 
 ---
 
 ## 🧠 CrewAI-Based Notebooks
 
-| Notebook | Description |
-|----------|-------------|
-| `basic_agent.ipynb` | Simple CrewAI agent configured with roles, tasks, and tools for structured reasoning. |
-| `task_pipeline.ipynb` | Implements a pipeline where agents collaborate in a predefined task sequence. |
-| `grok_simulation.ipynb` | A simulation of generative reasoning using CrewAI and Grok-style output chaining. |
+| Notebook           | Description |
+|--------------------|-------------|
+| `CrewAI_Groq.ipynb` | Implements equivalent patterns using CrewAI with Groq LLaMA3:  
+- ✅ Prompt Chaining  
+- 🔁 Orchestrator–Worker  
+- 🤖 Autonomous Agent with Internal Reasoning  
 
-🔍 Includes built-in agent logging and task summaries for visibility into decision flow.
+Uses Groq-hosted LLaMA 3 models for blazing fast inference. Ideal for students with no OpenAI key.
 
+---
+
+## 🔁 Design Patterns Covered
+
+| Pattern                 | Description |
+|-------------------------|-------------|
+| **Prompt Chaining**     | Pass output of one agent/task to the next  
+| **Parallel Execution**  | Multiple agents work simultaneously  
+| **Orchestrator–Worker** | One manager delegates and combines outputs  
+| **Evaluator–Optimizer** | Generator followed by a feedback critic  
+| **Routing Agent**       | Route input to the correct sub-agent  
+| **Autonomous Agent Loop** | Retry/reflective logic until goal is met  
+
+---
+
+## 🧪 Requirements
+
+- Python 3.10+  
+- `crewai`, `litellm`, `langgraph`, `duckduckgo-search`, `langchain-community`  
+- Free-tier accounts on [Groq Cloud](https://console.groq.com) and [LangSmith](https://smith.langchain.com) (optional)  
+
+---
+
+## 📂 Folder Structure
+
+```bash
+.
+├── LangGraph_Agent_Design_Patterns.ipynb   # All LangGraph patterns in one
+├── CrewAI_Groq.ipynb                       # All CrewAI + Groq agent workflows
+├── README.md                               # You're here
