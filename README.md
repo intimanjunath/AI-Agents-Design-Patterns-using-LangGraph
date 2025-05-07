@@ -17,10 +17,7 @@ This repository presents a structured implementation of **AI agent design patter
 
 | Topic                | Link     |
 |----------------------|----------|
-| LangGraph Agent Demo | [Watch here](#) |
-| CrewAI Agent Demo    | [Watch here](#) |
-
-*Replace `#` with the actual YouTube or Drive video links.*
+| LangGraph Agent and CrewAI Agent Demo | [Watch here](https://youtu.be/hb2ObKxr2zo) 
 
 ---
 
